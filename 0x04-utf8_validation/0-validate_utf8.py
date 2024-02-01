@@ -1,4 +1,8 @@
 #!/usr/bin/env python3
+"""
+Module that validates UTF-8
+"""
+
 
 def validUTF8(data):
     """
