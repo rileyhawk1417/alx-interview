@@ -33,6 +33,8 @@ stat_code_list = {200: 0,
                   500: 0}
 counter = 0
 
+total_size = 0
+
 
 def dump_metrics():
     """This function just prints metrics"""
