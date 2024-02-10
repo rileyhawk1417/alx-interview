@@ -7,6 +7,7 @@ variable `ixin` is for the inner ID
 
 
 def pascal_triangle(n):
+    """Pascal triangle function"""
     triangle = []
 
     if (n <= 0):
