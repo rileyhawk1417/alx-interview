@@ -8,7 +8,7 @@ Module to solve the lockboxing algorithm.
 def canUnlockAll(boxes):
     """
     Check if all boxes have keys to other
-    boxes. 
+    boxes.
     """
     box_count = len(boxes)
     opened_boxes = set([0])
