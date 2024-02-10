@@ -1,10 +1,14 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """
 Pascal Triangle
 variable `ix` is for ID
 variable `ixin` is for the inner ID
 """
-def pascal_triangle(n):
+
+from typing import List
+
+
+def pascal_triangle(n: int) -> List[list]:
     triangle = []
 
     if (n <= 0):
@@ -20,4 +24,3 @@ def pascal_triangle(n):
         triangle.append(row)
 
     return triangle
-
