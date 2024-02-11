@@ -6,7 +6,7 @@ with little effort.
 """
 
 
-def minOperatinos(n):
+def minOperations(n):
     """
     Calculate the least number of ops
     to get the result
