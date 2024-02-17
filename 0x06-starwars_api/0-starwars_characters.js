@@ -1,6 +1,6 @@
 #!/usr/bin/node
-const req = require("request");
-const URL = "https://swapi-api.hbtn.io/api";
+const req = require('request');
+const URL = 'https://swapi-api.hbtn.io/api';
 const input = process.argv;
 
 if (input.length > 2) {
@@ -11,17 +11,17 @@ if (input.length > 2) {
     const castLink = JSON.parse(body).characters;
     const castName = castLink.map(
       (link) =>
-        new Promise((res, reject) => {
+        new Promise((resolve, reject) => {
           req(link, (e, __, castReqBody) => {
             if (e) {
               reject(e);
             }
-            res(JSON.parse(castReqBody).name);
+            resolve(JSON.parse(castReqBody).name);
           });
-        }),
+        })
     );
     Promise.all(castName)
-      .then((castNames) => console.log(castNames.join("\n")))
+      .then((castNames) => console.log(castNames.join('\n')))
       .catch((errs) => console.error(errs));
   });
 }
