@@ -1,7 +1,7 @@
 #!/usr/bin/node
 const req = require("request");
 const URL = "https://swapi-api.hbtn.io/api";
-const input = process.arg;
+const input = process.argv;
 
 if (input.length > 2) {
   req(`${URL}/films/${input[2]}/`, (err, _, body) => {
