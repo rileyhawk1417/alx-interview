@@ -1,20 +1,18 @@
 #!/usr/bin/python3
 
 """
-Module showcases on how to 
+Module showcases on how to
 solve island perimeter in python.
 """
 
 
-def island_perimeter(grid):
+def island_perimeter_old(grid):
     """
     island_perimeter - returns the perimeter of an island
     @grid: 2D list of integers
     Return: the perimeter of the island
     """
     island = 0
-    if isinstance(grid, list) != list:
-        return 0
 
     rows, cols = len(grid), len(grid[0])
 
