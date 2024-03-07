@@ -13,6 +13,9 @@ def island_perimeter(grid):
     Return: the perimeter of the island
     """
     island = 0
+    if isinstance(grid, list) != list:
+        return 0
+
     rows, cols = len(grid), len(grid[0])
 
     for outer in range(rows):
